@@ -1,3 +1,7 @@
+dev:
+	${MAKE} -C creator dev
+
+
 build:
 	${MAKE} -C creator build
 

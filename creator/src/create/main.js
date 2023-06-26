@@ -1,8 +1,8 @@
 import Vue from "vue";
-import Options from "./Options.vue";
+import Create from "./Create.vue";
 
 new Vue({
   render(h) {
-    return h(Options);
+    return h(Create);
   },
 }).$mount("#app");

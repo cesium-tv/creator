@@ -6,7 +6,9 @@ import { chromeExtension } from "vite-plugin-chrome-extension";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+//      isProduction: true,
+    }),
     chromeExtension(),
   ],
   resolve: {
@@ -15,9 +17,11 @@ export default defineConfig({
     },
   },
   build: {
-    sourcemap: true,
     rollupOptions: {
-      input: 'src/manifest.json',
+      input: [
+        'src/manifest.json',
+        'src/background/background.js',
+      ],
     },
   },
 });

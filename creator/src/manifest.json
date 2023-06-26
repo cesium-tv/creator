@@ -8,7 +8,8 @@
           "48": "assets/cesium-48.png",
           "128": "assets/cesium-128.png"
         },
-        "default_title": "Cesium.tv Channel Creator"
+        "default_title": "Cesium.tv Channel Creator",
+        "default_popup": "create/index.html"
       },
     "icons": {
         "16": "assets/cesium-16.png",
